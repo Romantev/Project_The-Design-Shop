@@ -109,6 +109,10 @@ main section div {
     margin: auto;
 }
 
+.image {
+    background-color: #F7F7F7;
+}
+
 /* FOOTER */
 
 footer {
