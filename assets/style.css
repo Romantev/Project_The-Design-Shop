@@ -1,0 +1,183 @@
+@font-face {
+    font-family: karla;
+    src: url(./Karla-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: karla, Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --main-color: #323A45;
+    --second-color: #848484;
+    --space-out: 10rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    color: var(--second-color);
+    font-size: 1.7rem;
+    font-weight: 250;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+.mobile {
+    display: none;
+}
+
+/* HEADER */
+
+header {
+    margin: 3vw var(--space-out) 3vw var(--space-out);
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 2vw;
+}
+
+nav > a {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* MAIN */
+
+main {
+    margin: 0 var(--space-out ) 10vw var(--space-out);
+}
+
+main section {
+    margin: 0 0 5vw 0;
+}
+
+main section img:hover {
+    opacity: 0.2;
+}
+
+main section h2:hover {
+    opacity: 0.3;
+}
+
+main section img {
+    margin: 0 0 1vw 0;
+}
+
+main section div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+}
+
+.product-section img {
+    width: 100vw;
+    margin: auto;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 0 var(--space-out) 2vw var(--space-out);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 1fr;
+    align-self: center;
+    gap: 2.5vw;
+}
+
+footer div a, p {
+    display: block;
+    margin: 0 0 0.5vw 0;
+}
+
+footer div:nth-of-type(2) a {
+    display: inline;
+    font-weight: 900;
+}
+
+footer > p:nth-of-type(2) {
+    grid-column: 1/5;
+    color: var(--second-color);
+}
+
+footer p {
+    line-height: 2vw;
+}
+
+span {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+
+    header, main, footer {
+        margin: 5vw;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: inline;
+    }
+
+    .burger {
+        width: 3.5rem;
+        height: 0.6rem;
+        background-color: black;
+        margin: 6px 0;
+    }
+    
+    .product-group {
+        display: inline-block;
+    }
+
+    main section article {
+        margin-bottom: 3rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    footer p {
+        line-height: 3vw;
+    }
+}
