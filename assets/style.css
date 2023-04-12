@@ -82,11 +82,11 @@ main section {
 }
 
 main section img:hover {
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 main section h2:hover {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 main section img {
