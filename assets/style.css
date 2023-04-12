@@ -89,10 +89,6 @@ main section h2:hover {
     opacity: 0.5;
 }
 
-main section img {
-    margin: 0 0 1vw 0;
-}
-
 main section div {
     display: flex;
     justify-content: space-between;
@@ -111,6 +107,7 @@ main section div {
 
 .image {
     background-color: #F7F7F7;
+    margin-bottom: 2vw;
 }
 
 /* FOOTER */
